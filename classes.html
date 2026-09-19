@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>职业攻略 · 泰拉攻略站</title>
+  <link rel="stylesheet" href="css/style.css?v=20260919d">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="nav-inner">
+        <a class="nav-logo" href="index.html">🌳 泰拉攻略站</a>
+        <button class="nav-toggle" aria-label="打开菜单">☰</button>
+        <div class="nav-links">
+          <a href="index.html">首页</a>
+          <a href="guides.html">新手指南</a>
+          <a href="classes.html">职业攻略</a>
+          <a href="classes-calamity.html">灾厄职业</a>
+          <a href="bosses.html">BOSS 攻略</a>
+          <a href="items.html">物品数据库</a>
+          <a href="wiki.html">Wiki</a>
+        </div>
+      </div>
+    </nav>
+    <div class="searchbar">
+      <div class="searchbar-inner">
+        <input class="g-search" id="globalSearch" type="search" placeholder="🔍 搜索物品 / BOSS / 攻略，回车直达" autocomplete="off">
+        <div class="g-drop" id="globalDrop"></div>
+      </div>
+    </div>
+  </header>
+
+  <header class="page-head">
+    <h1>🎭 职业攻略</h1>
+    <p>四大职业全流程装备与饰品推荐 · 每件装备配游戏内图标 · 内容基于 1.4 版本</p>
+  </header>
+
+  <main class="container">
+
+    <!-- 职业筛选 -->
+    <div class="toolbar" id="classChips">
+      <button class="chip active" data-class="all">全部</button>
+      <button class="chip" data-class="melee">🛡️ 战士</button>
+      <button class="chip" data-class="ranger">🏹 射手</button>
+      <button class="chip" data-class="mage">🔮 法师</button>
+      <button class="chip" data-class="summon">🐝 召唤师</button>
+    </div>
+
+    <!-- 职业流程由 js/main.js 读取 js/data.js 的 classes 后自动生成 -->
+    <section id="classList"></section>
+
+    <p class="empty-tip">暂时没有该职业的内容 👀</p>
+
+  </main>
+
+  <footer class="footer">
+    <p>泰拉攻略站 · 粉丝自制学习项目，非官方网站</p>
+    <p>Terraria© Re-Logic · 手机版国服由心动网络代理 · 物品图标来自官方 Wiki</p>
+  </footer>
+
+  <script src="js/data.js?v=20260919d"></script>
+  <script src="js/data-calamity.js?v=20260919d"></script>
+  <script src="js/main.js?v=20260919d"></script>
+</body>
+</html>

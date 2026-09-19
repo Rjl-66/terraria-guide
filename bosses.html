@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOSS 流程攻略 · 泰拉攻略站</title>
+  <link rel="stylesheet" href="css/style.css?v=20260919d">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="nav-inner">
+        <a class="nav-logo" href="index.html">🌳 泰拉攻略站</a>
+        <button class="nav-toggle" aria-label="打开菜单">☰</button>
+        <div class="nav-links">
+          <a href="index.html">首页</a>
+          <a href="guides.html">新手指南</a>
+          <a href="classes.html">职业攻略</a>
+          <a href="classes-calamity.html">灾厄职业</a>
+          <a href="bosses.html">BOSS 攻略</a>
+          <a href="items.html">物品数据库</a>
+          <a href="wiki.html">Wiki</a>
+        </div>
+      </div>
+    </nav>
+    <div class="searchbar">
+      <div class="searchbar-inner">
+        <input class="g-search" id="globalSearch" type="search" placeholder="🔍 搜索物品 / BOSS / 攻略，回车直达" autocomplete="off">
+        <div class="g-drop" id="globalDrop"></div>
+      </div>
+    </div>
+  </header>
+
+  <header class="page-head">
+    <h1>⚔️ BOSS 流程攻略</h1>
+    <p>原版 + 灾厄模组 BOSS · 点击卡片展开详细攻略 · 含手机端操作提示</p>
+  </header>
+
+  <main class="container">
+
+    <!-- 来源切换：原版 / 灾厄 -->
+    <div class="toolbar" id="originChips">
+      <button class="chip active" data-origin="all">全部来源</button>
+      <button class="chip" data-origin="vanilla">原版</button>
+      <button class="chip" data-origin="calamity">灾厄模组</button>
+    </div>
+
+    <!-- 阶段筛选：data-stage 与 data.js 里的阶段对应 -->
+    <div class="toolbar" id="stageChips">
+      <button class="chip active" data-stage="all">全部</button>
+      <button class="chip" data-stage="1">困难模式前</button>
+      <button class="chip" data-stage="2">困难模式初期</button>
+      <button class="chip" data-stage="3">世纪之花后</button>
+      <button class="chip" data-stage="4">游戏末期</button>
+    </div>
+
+    <!-- BOSS 卡片由 js/main.js 读取 js/data.js + js/data-calamity.js 后自动生成 -->
+    <section id="bossList"></section>
+
+    <p class="empty-tip" id="emptyTip">这个阶段暂时没有内容 👀</p>
+
+  </main>
+
+  <footer class="footer">
+    <p>泰拉攻略站 · 粉丝自制学习项目，非官方网站</p>
+    <p>Terraria© Re-Logic · 手机版国服由心动网络代理</p>
+  </footer>
+
+  <script src="js/data.js?v=20260919d"></script>
+  <script src="js/data-calamity.js?v=20260919d"></script>
+  <script src="js/main.js?v=20260919d"></script>
+</body>
+</html>

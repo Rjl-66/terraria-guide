@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新手指南 · 泰拉攻略站</title>
+  <link rel="stylesheet" href="css/style.css?v=20260919d">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="nav-inner">
+        <a class="nav-logo" href="index.html">🌳 泰拉攻略站</a>
+        <button class="nav-toggle" aria-label="打开菜单">☰</button>
+        <div class="nav-links">
+          <a href="index.html">首页</a>
+          <a href="guides.html">新手指南</a>
+          <a href="classes.html">职业攻略</a>
+          <a href="classes-calamity.html">灾厄职业</a>
+          <a href="bosses.html">BOSS 攻略</a>
+          <a href="items.html">物品数据库</a>
+          <a href="wiki.html">Wiki</a>
+        </div>
+      </div>
+    </nav>
+    <div class="searchbar">
+      <div class="searchbar-inner">
+        <input class="g-search" id="globalSearch" type="search" placeholder="🔍 搜索物品 / BOSS / 攻略，回车直达" autocomplete="off">
+        <div class="g-drop" id="globalDrop"></div>
+      </div>
+    </div>
+  </header>
+
+  <header class="page-head">
+    <h1>📖 新手指南</h1>
+    <p>点开文章即可阅读 · 内容基于 1.4 版本，手机国服与国际服通用</p>
+  </header>
+
+  <main class="container">
+    <div class="section"></div>
+
+    <!-- 每篇文章就是一个 <details>，想加文章照抄一整段改文字即可 -->
+
+    <details class="accordion" id="g1" open>
+      <summary>📱 手机版必调的 5 个设置</summary>
+      <div class="accordion-body">
+        <p>刚进游戏别急着砍树，先点右上角暂停，在「设置」里把这几项调好，操作体验会好一倍。</p>
+        <h4>1. 虚拟摇杆模式</h4>
+        <p>设置里可以选「跳跃/摇杆」布局。推荐左手移动摇杆、右手跳跃与攻击的经典布局；手指容易误触的话，可以把摇杆调大一号。</p>
+        <h4>2. 智能光标</h4>
+        <p>开启后挖矿、放方块会自动选择相邻格子，下矿时效率大增；但精细建造（比如摆家具、搭 NPC 房）时建议关掉。快捷键在屏幕左侧，随时可切。</p>
+        <h4>3. 自动瞄准 / 锁定目标</h4>
+        <p>战斗时点一下远处的敌人即可锁定，武器会朝它开火，打 BOSS 必备。打移动快的目标时锁定比手搓准得多。</p>
+        <h4>4. 界面缩放与安全区</h4>
+        <p>全面屏手机记得把界面缩放到顺手大小，并调整安全区，避免按钮贴边按不到。</p>
+        <h4>5. 自动暂停</h4>
+        <p>单人游戏建议开启：打开背包时游戏自动暂停，查合成表、换装备不用慌。</p>
+        <p class="tip">💡 小贴士：如果觉得弹幕多了卡顿（比如打光之女皇），在设置里关掉多余的画面特效和粒子，流畅比画质重要。</p>
+      </div>
+    </details>
+
+    <details class="accordion" id="g2">
+      <summary>🌙 第一天晚上怎么活下来</summary>
+      <div class="accordion-body">
+        <p>泰拉瑞亚的第一天只有约 15 分钟白昼，目标只有一个：<strong>在入夜前建好庇护所</strong>。</p>
+        <h4>白天按这个顺序做</h4>
+        <ul class="bullet">
+          <li>砍 100 个左右木头（手机端按住树干即可，开智能光标更快）</li>
+          <li>用木头做出工作台、木剑、木弓和一些木箭</li>
+          <li>挖一点石头，做熔炉和更耐用的工具</li>
+          <li>在平地搭一个带墙、有门、有火把和桌椅的小房子（标准见下一篇住房指南）</li>
+          <li>顺手采蘑菇、打史莱姆攒凝胶，凝胶 + 木头可以做火把</li>
+        </ul>
+        <h4>晚上干什么</h4>
+        <p>僵尸会破门（但开门动作很慢），恶魔眼会飞进来。最稳的做法是<strong>待在家里别乱跑</strong>，从门缝或封死的墙洞里挥剑即可。也可以趁夜挖矿——地下相对安全。</p>
+        <p class="tip">💡 触屏技巧：搭方块时点不准可以开智能光标；挖两格高、一格宽的竖井往下探索，最不容易摔死。</p>
+      </div>
+    </details>
+
+    <details class="accordion" id="g3">
+      <summary>🏠 NPC 住房条件详解</summary>
+      <div class="accordion-body">
+        <p>向导开局就跟着你，但商人、护士、树妖等 NPC 都需要<strong>符合条件的空房间</strong>才会入住。</p>
+        <h4>一个合格房间的要求</h4>
+        <ul class="bullet">
+          <li>完全封闭：有背景墙（不能留洞，天然土墙不算）</li>
+          <li>内部空间至少约 30 格（常见做法：内宽 10 格、内高 4 格）</li>
+          <li>有一扇门或平台当入口</li>
+          <li>一件光源（火把即可）、一件平地家具（桌子/工作台）、一把椅子</li>
+        </ul>
+        <h4>怎么检查合不合格</h4>
+        <p>打开背包点右侧「房屋」按钮，再点「？」图标后点房间，会直接提示「这个住房很合适」或缺什么。</p>
+        <h4>常见 NPC 入住条件</h4>
+        <ul class="bullet">
+          <li>商人：身上攒够 50 银币</li>
+          <li>护士：生命上限提升过一次（吃到一颗生命水晶）</li>
+          <li>树妖：打败任意一个 BOSS（比如克苏鲁之眼）</li>
+          <li>爆破专家：背包里有爆炸物；军火商：背包里有枪</li>
+        </ul>
+        <p class="warn">⚠️ 血月时僵尸会疯狂敲门，可以临时把门换成平台，怪物就不会开门了。</p>
+      </div>
+    </details>
+
+    <details class="accordion" id="g4">
+      <summary>🛡️ 四大职业怎么选</summary>
+      <div class="accordion-body">
+        <p>游戏没有严格的职业锁定，由你穿的护甲和拿的武器决定流派。前期什么强用什么，肉后再定方向即可。</p>
+        <h4>战士（近战）</h4>
+        <p>高防御、贴脸输出，武器从宽刃剑到长矛回旋镖都有。<strong>手机端操作最省心</strong>，锁定敌人后边躲边砍，新手首选。</p>
+        <h4>射手（远程）</h4>
+        <p>用弓箭和枪械，安全距离输出，但要持续准备子弹/箭。手机端有自动瞄准加持，体验也很好，推荐度第二。</p>
+        <h4>法师（魔法）</h4>
+        <p>武器花哨、爆发高，但身板脆、要管魔力和魔力药水。手机端需要边走位边瞄准，操作压力中等偏上。</p>
+        <h4>召唤师</h4>
+        <p>靠召唤物自动打怪，本体专心走位。前期装备少、起步弱，1.4 版本雀杖开局已经友好很多，适合二周目尝试。</p>
+        <p class="tip">💡 手机端推荐路线：前期战士开荒 → 肉后转射手打机械 BOSS → 后期随便换，饰品里的机动性装备（云瓶、靴子、翅膀）对所有职业都通用。</p>
+      </div>
+    </details>
+
+    <details class="accordion" id="g5">
+      <summary>⛏️ 矿石路线与入侵事件应对</summary>
+      <div class="accordion-body">
+        <h4>困难模式前的矿石升级链</h4>
+        <ul class="bullet">
+          <li>铜/锡 → 铅/铁 → 银/钨 → 金/铂金：地表和浅层就能挖到，镐子逐级升级</li>
+          <li>魔金/猩红：打克苏鲁之眼、世界吞噬怪/克苏鲁之脑获取，做出噩梦镐/死亡使者镐</li>
+          <li>狱石：地狱里用镐挖（要黑曜石皮肤药水或黑曜石骷髅头防烫），做熔岩套和熔岩镐，肉前毕业装</li>
+        </ul>
+        <h4>肉后的新三矿</h4>
+        <p>打败血肉墙后，用神锤砸恶魔祭坛/猩红祭坛，世界会依次刷出钴蓝/钯金 → 秘银/山铜 → 精金/钛金，<strong>每级镐子是挖下一阶矿的前提</strong>，按顺序升级即可。</p>
+        <h4>常见入侵事件</h4>
+        <ul class="bullet">
+          <li><strong>血月</strong>：夜晚事件，怪物大量刷新、兔子鱼变敌对。躲房里守门口，正好刷钱</li>
+          <li><strong>哥布林军队</strong>：提示后从地图一侧推进，击退他们后能在地下找到哥布林工匠（重铸饰品的关键 NPC）</li>
+          <li><strong>海盗入侵</strong>：肉后事件，敌人强但掉落金币多，搭平台远程清场最稳</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="accordion" id="g6">
+      <summary>🗺️ 开荒流程总览 Checklist</summary>
+      <div class="accordion-body">
+        <p>不知道下一步该干嘛？按这个顺序推图，就是标准开荒路线：</p>
+        <h4>困难模式前</h4>
+        <ul class="bullet">
+          <li>☐ 建家、攒 50 银币等商人，做金/铂金装备</li>
+          <li>☐ 下洞找生命水晶到 200 血，拿附魔回旋镖、村正等好东西</li>
+          <li>☐ 史莱姆王（可跳过）→ 克苏鲁之眼</li>
+          <li>☐ 世界吞噬怪 / 克苏鲁之脑 → 做噩梦镐</li>
+          <li>☐ 蜂王（可刷蜜蜂枪）→ 骷髅王（解锁地牢）</li>
+          <li>☐ 下地狱挖狱石做熔岩套，铺地狱桥</li>
+          <li>☐ 打血肉墙，世界进入困难模式</li>
+        </ul>
+        <h4>困难模式</h4>
+        <ul class="bullet">
+          <li>☐ 砸祭坛、挖三矿升级装备</li>
+          <li>☐ 史莱姆皇后（可选）→ 双子魔眼 / 毁灭者 / 机械骷髅王</li>
+          <li>☐ 地下丛林找世纪之花花苞 → 世纪之花</li>
+          <li>☐ 进神庙打石巨人；猪龙鱼公爵、光之女皇（可选高难）</li>
+          <li>☐ 地牢入口打邪教徒 → 破四柱 → 月亮领主，毕业！</li>
+        </ul>
+        <p class="tip">💡 每个 BOSS 的详细召唤方式和打法，都在「<a href="bosses.html">BOSS 攻略</a>」页。</p>
+      </div>
+    </details>
+
+  </main>
+
+  <footer class="footer">
+    <p>泰拉攻略站 · 粉丝自制学习项目，非官方网站</p>
+    <p>Terraria© Re-Logic · 手机版国服由心动网络代理 · 具体内容以游戏内为准</p>
+  </footer>
+
+  <script src="js/data.js?v=20260919d"></script>
+  <script src="js/data-calamity.js?v=20260919d"></script>
+  <script src="js/main.js?v=20260919d"></script>
+</body>
+</html>
