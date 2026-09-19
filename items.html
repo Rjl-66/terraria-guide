@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>物品数据库 · 泰拉攻略站</title>
+  <link rel="stylesheet" href="css/style.css?v=20260919d">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="nav-inner">
+        <a class="nav-logo" href="index.html">🌳 泰拉攻略站</a>
+        <button class="nav-toggle" aria-label="打开菜单">☰</button>
+        <div class="nav-links">
+          <a href="index.html">首页</a>
+          <a href="guides.html">新手指南</a>
+          <a href="classes.html">职业攻略</a>
+          <a href="classes-calamity.html">灾厄职业</a>
+          <a href="bosses.html">BOSS 攻略</a>
+          <a href="items.html">物品数据库</a>
+          <a href="wiki.html">Wiki</a>
+        </div>
+      </div>
+    </nav>
+    <div class="searchbar">
+      <div class="searchbar-inner">
+        <input class="g-search" id="globalSearch" type="search" placeholder="🔍 搜索物品 / BOSS / 攻略，回车直达" autocomplete="off">
+        <div class="g-drop" id="globalDrop"></div>
+      </div>
+    </div>
+  </header>
+
+  <header class="page-head">
+    <h1>🎒 物品数据库</h1>
+    <p>原版 + 灾厄模组物品 · 左侧彩条表示游戏内稀有度</p>
+  </header>
+
+  <main class="container">
+
+    <!-- 搜索 + 稀有度 -->
+    <div class="toolbar">
+      <input class="search-input" id="itemSearch" type="search" placeholder="搜索物品名 / 获取方式，如：泰拉刃、夜明矿、噬魂幽花…">
+      <select class="search-select" id="raritySelect">
+        <option value="all">全部稀有度</option>
+        <option>灰色</option>
+        <option>白色</option>
+        <option>蓝色</option>
+        <option>绿色</option>
+        <option>橙色</option>
+        <option>粉色</option>
+        <option>黄色</option>
+        <option>红色</option>
+        <option>紫色</option>
+        <option>彩色</option>
+        <option>灾厄</option>
+      </select>
+    </div>
+
+    <!-- 原版 / 灾厄 切换 -->
+    <div class="toolbar" id="originChips">
+      <button class="chip active" data-origin="all">全部来源</button>
+      <button class="chip" data-origin="vanilla">原版</button>
+      <button class="chip" data-origin="calamity">灾厄模组</button>
+    </div>
+
+    <div class="toolbar" id="catChips">
+      <button class="chip active" data-cat="all">全部</button>
+      <button class="chip" data-cat="武器">武器</button>
+      <button class="chip" data-cat="盔甲">盔甲</button>
+      <button class="chip" data-cat="饰品">饰品</button>
+      <button class="chip" data-cat="药水">药水</button>
+      <button class="chip" data-cat="材料">材料</button>
+      <button class="chip" data-cat="NPC">NPC</button>
+    </div>
+
+    <!-- 物品卡片由 js/main.js 读取 js/data.js + js/data-calamity.js 后自动生成 -->
+    <section class="item-grid" id="itemList"></section>
+
+    <p class="empty-tip" id="emptyTip">没有找到匹配的物品，换个关键词试试 🔍</p>
+
+  </main>
+
+  <footer class="footer">
+    <p>泰拉攻略站 · 粉丝自制学习项目，非官方网站</p>
+    <p>Terraria© Re-Logic · 手机版国服由心动网络代理 · 物品图标来自官方 Wiki 与灾厄 Wiki</p>
+  </footer>
+
+  <script src="js/data.js?v=20260919d"></script>
+  <script src="js/data-calamity.js?v=20260919d"></script>
+  <script src="js/main.js?v=20260919d"></script>
+</body>
+</html>

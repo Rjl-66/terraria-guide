@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>全要素 Wiki · 泰拉攻略站</title>
+  <link rel="stylesheet" href="css/style.css?v=20260919d">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="nav-inner">
+        <a class="nav-logo" href="index.html">🌳 泰拉攻略站</a>
+        <button class="nav-toggle" aria-label="打开菜单">☰</button>
+        <div class="nav-links">
+          <a href="index.html">首页</a>
+          <a href="guides.html">新手指南</a>
+          <a href="classes.html">职业攻略</a>
+          <a href="classes-calamity.html">灾厄职业</a>
+          <a href="bosses.html">BOSS 攻略</a>
+          <a href="items.html">物品数据库</a>
+          <a href="wiki.html">Wiki</a>
+        </div>
+      </div>
+    </nav>
+    <div class="searchbar">
+      <div class="searchbar-inner">
+        <input class="g-search" id="globalSearch" type="search" placeholder="🔍 搜索物品 / BOSS / 攻略，回车直达" autocomplete="off">
+        <div class="g-drop" id="globalDrop"></div>
+      </div>
+    </div>
+  </header>
+
+  <header class="page-head">
+    <h1>📚 全要素 Wiki</h1>
+    <p>NPC、生物群落、随机事件与钓鱼资料 · 词条持续补充中</p>
+  </header>
+
+  <main class="container">
+    <div class="section"></div>
+
+    <!-- ============ NPC ============ -->
+    <section class="wiki-group" id="wiki-npc">
+      <h2>🧑‍🤝‍🧑 NPC</h2>
+
+      <details class="accordion">
+        <summary>向导</summary>
+        <div class="accordion-body">
+          <p>开局就有的 NPC。最重要的功能是<strong>合成查询</strong>：把物品拖给他（手机端点他头像选「制作」），就能看到它能合成什么、需要什么工作站，是萌新最好的老师。</p>
+          <p>打血肉墙时需要他活着：把向导巫毒娃娃丢进岩浆，他会被献祭召唤血肉墙，之后过几天会重新入住。</p>
+        </div>
+      </details>
+
+      <details class="accordion">
+        <summary>护士</summary>
+        <div class="accordion-body">
+          <p>吃过任意一颗生命水晶提升上限后入住。<strong>花钱瞬间回满血并解除大部分负面状态</strong>，打 BOSS 时把她的房间搬到战场旁边，等于移动血泉。</p>
+          <p class="tip">💡 手机端 BOSS 战中可以快速切到她治疗再切回来，费用随缺失血量计算。</p>
+        </div>
+      </details>
+
+      <details class="accordion">
+        <summary>树妖</summary>
+        <div class="accordion-body">
+          <p>打败任意 BOSS 后入住。出售种子、花盆、净化粉等物品，并会报告当前世界<strong>神圣/腐化/猩红的蔓延比例</strong>。</p>
+          <p>她卖的「净化粉」可以把被感染的石块暂时还原；困难模式后还会出售种神圣草地的圣种，用来对抗腐化蔓延。</p>
+        </div>
+      </details>
+
+      <details class="accordion">
+        <summary>哥布林工匠</summary>
+        <div class="accordion-body">
+          <p>击退一次哥布林军队入侵后，他会随机被绑在地下深处，找到解绑即可入住。</p>
+          <p>两大功能：出售工匠作坊（合成高级饰品必需）和<strong>重铸</strong>——花钱给武器饰品随机刷附加词条（护佑、险恶、急速等），后期提升全靠它。</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- ============ 生物群落 ============ -->
+    <section class="wiki-group" id="wiki-biome">
+      <h2>🌍 生物群落</h2>
+
+      <details class="accordion">
+        <summary>森林（出生地表）</summary>
+        <div class="accordion-body">
+          <p>大多数玩家的出生点，绿树、史莱姆和兔子的家园。难度最低，家建在这里最安逸。世界两端分别通往腐化/猩红之地与丛林（取决于世界种子）。</p>
+        </div>
+      </details>
+
+      <details class="accordion">
+        <summary>地下丛林</summary>
+        <div class="accordion-body">
+          <p>地图边缘丛林的正下方，由泥块和月光草构成，蜂巢、孢子和花蜜的所在地。</p>
+          <p>肉前这里有蜂王和蜜蜂装备；<strong>肉后是整个游戏最重要的区域之一</strong>：有三矿、花苞（召唤世纪之花）和丛林神庙。肉后丛林会刷很强的怪，没有精金套别乱跑。</p>
+        </div>
+      </details>
+
+      <details class="accordion">
+        <summary>地狱（冥界）</summary>
+        <div class="accordion-body">
+          <p>世界最底层，岩浆海、狱石矿和暗影箱的所在。肉前最终 BOSS 血肉墙的战场。</p>
+          <p>来之前准备黑曜石皮肤药水或黑曜石骷髅头防烫，并在岩浆海上铺一条长桥。暗影箱里能开出熔岩钓钩、烈焰火鞭等好东西。</p>
+        </div>
+      </details>
+
+      <details class="accordion">
+        <summary>神圣之地</summary>
+        <div class="accordion-body">
+          <p>打败血肉墙后在世界中生成的「好生态」，彩虹、流光和独角兽的地盘。它和腐化/猩红一样会蔓延，三者互相排斥。</p>
+          <p>地下神圣产明胶水晶（召唤史莱姆皇后）、夜光七彩草蛉（召唤光之女皇）和七彩矿车等好东西。</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- ============ 随机事件 ============ -->
+    <section class="wiki-group" id="wiki-event">
+      <h2>🌩️ 随机事件</h2>
+
+      <details class="accordion">
+        <summary>血月</summary>
+        <div class="accordion-body">
+          <p>肉前就可能出现的夜晚事件，屏幕泛红，怪物刷新量暴增，僵尸会敲门、普通动物变敌对。</p>
+          <p>应对：躲进合格的房子守门口即可。商人和树妖会出售血月限定物品；肉后血月还能钓特殊任务鱼和板条箱。</p>
+        </div>
+      </details>
+
+      <details class="accordion">
+        <summary>哥布林军队</summary>
+        <div class="accordion-body">
+          <p>生命值达到 200 且砸过暗影珠/猩红之心后，有提示「哥布林军队正从东边/西边逼近」。击退整支军队后，<strong>地下会刷出被绑的哥布林工匠</strong>，记得去救。</p>
+        </div>
+      </details>
+
+      <details class="accordion">
+        <summary>海盗入侵</summary>
+        <div class="accordion-body">
+          <p>困难模式事件，用海盗地图（海边怪物掉落）或随机触发。海盗血厚、有炮手和鹦鹉，掉大量金币和海盗家具。</p>
+          <p>应对：在海边高地架平台，用穿透远程武器清扎堆的小怪；NPC 海盗船长击退之后会入住卖大炮。</p>
+        </div>
+      </details>
+
+      <details class="accordion">
+        <summary>火星暴乱</summary>
+        <div class="accordion-body">
+          <p>打败石巨人后，在太空层有概率遇到火星探测器。让它发现你后逃走，就会触发火星入侵。</p>
+          <p>敌人科技感十足，掉落宇宙滑板、波涌之刃等强力装备，还有召唤外星飞碟坐骑。建议毕业装备再打。</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- ============ 钓鱼 ============ -->
+    <section class="wiki-group" id="wiki-fishing">
+      <h2>🎣 钓鱼</h2>
+
+      <details class="accordion">
+        <summary>钓鱼基础机制</summary>
+        <div class="accordion-body">
+          <p>需要一根鱼竿、鱼饵和一片足够大的液体（至少 75 格水/蜂蜜、50 格岩浆）。把鱼饵装在弹药栏，持竿点水面抛线，浮标下沉时点一下收杆。</p>
+          <p>渔力越高越容易钓到好东西：好鱼竿、好鱼饵、合适的时间天气（雨天、特定月相）都加渔力。手机端抛竿和收杆都只要点一下。</p>
+        </div>
+      </details>
+
+      <details class="accordion">
+        <summary>任务鱼与渔夫</summary>
+        <div class="accordion-body">
+          <p>海边睡着的渔夫叫醒后会入住，他每天给一个<strong>任务鱼委托</strong>：在指定群落钓到指定鱼交给他，奖励金币、渔具、饰品和药水。</p>
+          <p>累计完成任务能拿到金钓竿、钓手耳环等关键渔具。同一条任务鱼还可以提前多钓几条存着（但每天只能交一次）。</p>
+        </div>
+      </details>
+
+      <details class="accordion">
+        <summary>板条箱（宝箱匣）</summary>
+        <div class="accordion-body">
+          <p>钓鱼时随机钓上的箱子，开得出矿石、药水、宠物和钱币。<strong>肉前攒一堆板条箱，肉后再开可以直接开出三矿</strong>，是著名的省力技巧。</p>
+          <p>用板条箱药水能显著提高钓率，刷箱子时记得先喝一瓶。</p>
+        </div>
+      </details>
+
+      <details class="accordion">
+        <summary>鱼竿、鱼饵与特殊钓点</summary>
+        <div class="accordion-body">
+          <ul class="bullet">
+            <li><strong>鱼竿</strong>：入门用商人卖的加强钓竿，机修工卖的玻璃钢钓竿，最终目标是任务奖励的金钓竿（50% 渔力）</li>
+            <li><strong>鱼饵</strong>：蚯蚓（雨天地表挖）、萤火虫（夜晚草地）、松露虫（蘑菇地，用来钓猪龙鱼公爵）</li>
+            <li><strong>蜂蜜</strong>：能钓到蜂蜜鱼（回血道具）和蜂蜜板条箱</li>
+            <li><strong>岩浆</strong>：需要熔岩钓钩等防岩浆渔具，能钓出地狱专属物品</li>
+          </ul>
+        </div>
+      </details>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>泰拉攻略站 · 粉丝自制学习项目，非官方网站</p>
+    <p>Terraria© Re-Logic · 手机版国服由心动网络代理</p>
+  </footer>
+
+  <script src="js/data.js?v=20260919d"></script>
+  <script src="js/data-calamity.js?v=20260919d"></script>
+  <script src="js/main.js?v=20260919d"></script>
+</body>
+</html>
